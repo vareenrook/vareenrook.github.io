@@ -17,7 +17,7 @@ function obtainVideoData(callback) {
   var processing = videoThumbs.length;
 
   videoThumbs.forEach(function (videoID, index) {
-    $.getJSON("http://www.vimeo.com/api/v2/video/" + videoID + ".json?callback=?", { format: "json" }).done(function (data) {
+    $.getJSON("https://www.vimeo.com/api/v2/video/" + videoID + ".json?callback=?", { format: "json" }).done(function (data) {
       videoThumbs[index] = data[0]; //save all data for this element
     }).fail(function (error) {
       console.log(error);
