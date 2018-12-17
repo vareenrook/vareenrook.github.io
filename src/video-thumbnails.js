@@ -32,6 +32,7 @@ function obtainVideoData(callback) {
 
     //done with all video loading
     if (processing === 0) {
+      $(".loader").removeClass("fade-out");     //show videos
       callback();
     }
   }

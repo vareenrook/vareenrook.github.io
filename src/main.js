@@ -6,7 +6,7 @@ $(function() {
   //should be a promise
   loadThumbnails();
 
-  $(".loader").removeClass("fade-out");
+
 
   //note that our data manip refreshes the carousel
   $(".carousel").slick({
@@ -18,9 +18,9 @@ $(function() {
     dots: true,
     infinite: false,
     speed: 600,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    adaptiveHeight: false,
+    adaptiveHeight: true,
     swipeToSlide: true,
 
     // You can unslick at a give n breakpoint now by adding:
@@ -29,29 +29,24 @@ $(function() {
 
     responsive: [
       {
-        breakpoint: 1355,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 1024,
+        breakpoint: 1440,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 760,
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
+      }
+
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
-      }
+
     ]
   });
 });

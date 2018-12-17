@@ -155,8 +155,8 @@ body.fade-out {
     height: 35px;
     padding-left: 25px;
     padding-top: 35px;
+    position: absolute;
 
-    margin: 25px;
 }
 
 .control-button span {
@@ -165,9 +165,14 @@ body.fade-out {
 
 .control-button.left {
     background: url(../images/previous.png) no-repeat;
+    top: 30px;
+    left: -50px;
 }
 
 .control-button.right {
+    top: 30px;
+    bottom: 0px;
+    right: -50px;
     background: url(../images/next.png) no-repeat;
 }
 
@@ -178,6 +183,7 @@ body.fade-out {
 
 .slick-track {
     display: flex;
+
 }
 
 
@@ -231,4 +237,14 @@ body.fade-out {
 
 .carousel *:focus {
     outline: 0;
+}
+
+.carousel {
+    margin-left: 100px;
+   margin-right: 80px;
+}
+
+
+.carousel-block {
+
 }
