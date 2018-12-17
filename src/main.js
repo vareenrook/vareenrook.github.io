@@ -20,7 +20,7 @@ $(function() {
     speed: 600,
     slidesToShow: 3,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     swipeToSlide: true,
 
     // You can unslick at a give n breakpoint now by adding:
