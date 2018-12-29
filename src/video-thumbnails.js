@@ -53,7 +53,8 @@ function paintVideos() {
 
     imageField.attr('src', videoData.thumbnail_large);
     titleField.html(videoData.title);
-    aTagField.attr('href', videoData.url);
+    // aTagField.attr('href', videoData.url);
+    aTagField.attr('href', 'javascript:openModal(' + videoData.id + ')');
   });
 
   //refresh the slick carousels -- bad location to do it here but it'll do the job

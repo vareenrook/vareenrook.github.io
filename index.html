@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>Vareen Rook</title>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/preflight.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/utilities.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./styles/styles.css"/>
@@ -13,21 +14,35 @@
         <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css"/>
 
     </head>
-    <header>
-        <div class="rc-header">
-            <span>Vareen Rook</span>
-            <div class="rc-header__subtitle">
-                HKU Media Student
-            </div>
-            <div class="rc-seperator"></div>
-            <nav class="rc-header__nav">
-                <span><a href="#">Film</a></span>
-                <span><a href="#">Other</a></span>
-                <span><a href="#">About</a></span>
-            </nav>
-        </div>
-    </header>
+
     <body>
+        <header>
+            <div class="rc-header">
+                <span>Vareen Rook</span>
+                <div class="rc-header__subtitle">
+                    HKU Media Student
+                </div>
+                <div class="rc-seperator"></div>
+                <nav class="rc-header__nav">
+                    <span><a href="#">Film</a></span>
+                    <span><a href="#">Other</a></span>
+                    <span><a href="#">About</a></span>
+                </nav>
+            </div>
+        </header>
+
+        <!--Call your modal-->
+        <div id="modal-container">
+            <div class="modal-background">
+                <button id="#modal-close" onclick="" class="modal-close-button"></button>
+                <div class="modal" onclick="">
+                    <div class="modal-content"  tabindex="-1">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
         <div class="loader fade-out">
@@ -88,7 +103,7 @@
                 <div class="carousel flex flex-row justify-center">
 
                     <div class="video-item">
-                        <a class=" flex flex-col" href='#'>
+                        <a class=" flex flex-col">
                             <img class=" self-center self-center thumbnail" thumbnail_id="242017653"/>
                             <span class="video-title">Hello World</span>
                         </a>
@@ -155,8 +170,8 @@
         <script type="text/javascript" src="src/slick/slick.min.js"></script>
         <script src="src/carousel.js"></script>
         <script src="src/video-thumbnails.js"></script>
-
         <script src="src/main.js"></script>
+        <script src="src/fitvids.js"></script>
     </body>
 </html>
 
